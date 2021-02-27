@@ -1,0 +1,38 @@
+{
+  "name": "@conventional-commits/git-recommended-bump",
+  "version": "0.0.0",
+  "description": "Recommend a semver version bump from git tags and Conventional Commits",
+  "main": "index.js",
+  "type": "commonjs",
+  "keywords": [
+    "Conventional Commits",
+    "what bump",
+    "semver",
+    "git"
+  ],
+  "scripts": {
+    "test": "standard && c8 mocha",
+    "test:debug": "mocha --inspect --inspect-brk",
+    "coverage": "c8 --check-coverage mocha --timeout=8000"
+  },
+  "author": "Wes Todd <wes@wesleytodd.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:conventional-commits/git-recommended-bump.git"
+  },
+  "bugs": {
+    "url": "https://github.com/conventional-commits/git-recommended-bump/issues"
+  },
+  "homepage": "https://github.com/conventional-commits/git-recommended-bump#readme",
+  "devDependencies": {
+    "c8": "^7.6.0",
+    "mocha": "^8.3.0",
+    "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "@conventional-commits/parser": "^0.4.1",
+    "semver": "^7.3.4",
+    "unist-util-visit-parents": "^3.1.1"
+  }
+}
